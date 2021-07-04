@@ -139,6 +139,8 @@ public class ScraperController implements EventHandler<ActionEvent>{
 		}
 	}*/
 	
+	/*Odraditi implementaciju scrape-a sa user agentima*/
+	
 	private Task<ObservableList<Company>> scrapeData(){
 		
 		Task<ObservableList<Company>> scrapeTask = new Task<ObservableList<Company>>() {
@@ -160,12 +162,7 @@ public class ScraperController implements EventHandler<ActionEvent>{
 					while((url = br.readLine()) != null) {
 						int timeOut = new Random().nextInt(20-10+1)+10;
 						
-						int randomAgent = new Random().nextInt(agents.size());
-						
-						String userAgent = agents.get(randomAgent);
-						
 						System.out.println("url -> " + url);
-						System.out.println(userAgent);
 						System.out.println(timeOut);
 						
 						Document doc = Jsoup.connect(url).userAgent("Mozilla").timeout(30*1000).ignoreHttpErrors(false).get();
