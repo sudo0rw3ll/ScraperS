@@ -1,2 +1,2 @@
 # ScraperS
-Specific website Scraper written in java
+Specific website <b>Scraper<b> written in <b>java</b>
