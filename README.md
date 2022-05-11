@@ -6,7 +6,7 @@ GUI is very simple it's made using JavaFX library.
 User can start new scraping session whenever he wants to and export scraped data
 to csv also.
 
-![ScraperS GUI](scrapers.png)
+![ScraperS GUI](scrapers2.png)
 
 Scraper is written using Jsoup library, it uses hardcoded user agent and random
 generated timeout to simulate user activity. This process can be done better by
